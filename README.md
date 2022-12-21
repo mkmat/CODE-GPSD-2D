@@ -30,7 +30,7 @@ with a radius of the probe particle, and the pore circle (green, centered at the
       
 <img src="./snapshots/screenshot-4.png">
       
-### Calculate G-PSD for the benchmark
+### Calculate voronoi-based G-PSD for the benchmark
 
       code_G_PSD_2D_for_our_benchmark.m
       
@@ -39,14 +39,14 @@ specified in the file. The result is compared with the analytical result (dashed
       
 <img src="./snapshots/screenshot-3.png">
 
-### Calculate G-PSD for the multidisk
+### Calculate voronoi-based G-PSD for the multidisk
 
       code_G_PSD_2D_for_our_multidisk.m
       
 calculates and displays the voronoi-based G-PSD as well as the cumulative G-PSD for the multidisk with 20 circles. The number of shots (M) is
 specified in the file. 
 
-### Calculate G-PSD for user-defined system
+### Calculate voronoi-based G-PSD for user-defined system
 
 The user has to specify box size *L* and *N* material center coordinates *x(1..N,1:2)* as well as the
 radius *ro* of a material circle,
@@ -83,5 +83,19 @@ Example:
       xlabel('r');
       ylabel('P_{cum}(r|0)')
       
+### Calculate grid-based G-PSD for user-defined system
 
+The user has to specify box size *L* and *N* material center coordinates *x(1..N,1:2)* as well as the
+radius *ro* of a material circle,
+thickness *rc* of the material coating, 
+radius *rp* of the probe circle, 
+number *PSDbins* of bins of the G-PSD,  
+number *grid_resolution* of nodes in each dimension. Then call 
   
+      [radius,GPSD,GPSDcum,cpusecs,X,Y,MK]=reference_GPSD_2D_via_grid(L,x,ro,rc,rp,grid_resolution,PSDbins)
+
+The resulting vectors *radius*, *GPSD*, and *GPSDcum* contain radii, the G-PSD, and the cumulative G-PSD 
+obtained with the grid-based method. The matrices *X*, *Y*, and *MK* contain the pore radii for every grid node
+and can be visualized via
+
+      figure; pcolor(X,Y,MK); shading flat; 
