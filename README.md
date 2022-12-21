@@ -98,4 +98,12 @@ The resulting vectors *radius*, *GPSD*, and *GPSDcum* contain radii, the G-PSD, 
 obtained with the grid-based method. The matrices *X*, *Y*, and *MK* contain the pore radii for every grid node
 and can be visualized via
 
-      figure; pcolor(X,Y,MK); shading flat; 
+      figure; pcolor(X,Y,MK); shading flat; axis image; 
+      
+Example: 
+
+      [N,L,ro,x] = create_our_multidisk;
+      [radius,GPSD,GPSDcum,cpusecs,X,Y,MK]=reference_GPSD_2D_via_grid(L,x,0.1,0,0,100,1000);
+      figure; pcolor(X,Y,MK); shading flat; axis image; colorbar; 
+      
+<img src="./snapshots/screenshot-5.png">
