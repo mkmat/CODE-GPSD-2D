@@ -57,7 +57,7 @@ number *M* of random shots to calculate the G-PSD. Then call
 
        [radius,GPSD,GPSDcum] = code_G_PSD_2D_for_user_defined_system(L,x,ro,rc,rp,shots,PSDbins)
        
-The resulting vectors *radius*, *GPSD*, and *GPSDcum* contain radii, the G-PSD, and the cumulative G-PSD. 
+The resulting vectors *radius*, *GPSD*, and *GPSDcum* contain radii *r*, the G-PSD *P(r;rc|rp)*, and the cumulative G-PSD *P<sub>sum</sub>(r;rc|rp)*. 
 
 Example: 
 
