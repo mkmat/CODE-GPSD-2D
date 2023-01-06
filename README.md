@@ -6,7 +6,7 @@ The matlab<sup>TM</sup> code was written 11 Nov 2022 by Martin Kroger (mk@mat.et
       Samarth Agrawal, Sandra Gamlarini, Martin Kröger,
       Voronoi tessellation-based algorithm for determining rigorously defined 
       classical and generalized geometric pore size distributions,
-      Computer Physics Commmunications XX (2023) XX
+      Physical Review E XX (2023) XX
 
 ### Visualize a pore for a randomly chosen point *p* inside the benchmark configuration
 
