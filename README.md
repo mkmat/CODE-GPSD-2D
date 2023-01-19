@@ -1,7 +1,7 @@
 # CODE-GPSD-2D
 generalized geometric pore size distribution for two-dimensional (square, periodic) systems composed of monodisperse circles
 
-The matlab<sup>TM</sup> code was written 11 Nov 2022 by Martin Kroger (mk@mat.ethz.ch) and is part of the supplementary information of the following article: 
+The matlab<sup>TM</sup> code was written 11 Nov 2022 by Martin Kroger (http://www.complexfluids.ethz.ch) and is part of the supplementary information of the following article: 
 
       Samarth Agrawal, Sandra Gamlarini, Martin Kröger,
       Voronoi tessellation-based algorithm for determining rigorously defined 
