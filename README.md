@@ -12,7 +12,9 @@ The matlab<sup>TM</sup> code was written 11 Nov 2022 by Martin Kroger (http://ww
 
 Download this repository to a machine that has matlab<sup>TM</sup> 2021 or higher installed. 
 All matlab functions included in this repository can be called individually. Examples on how 
-to use them are given below. 
+to use them are given below. The definition of the generalized pore size distribution, and further 
+explanations are provided in the published article. We are planning to publish a 3D version
+of this code in the near future. 
 
 ### Visualize a pore for a randomly chosen point *p* inside the benchmark configuration
 
